@@ -1,1 +1,247 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Dr. Nisha</title>
+
+    <!-- Carollo Playscript Font -->
+    <link href="https://fonts.cdnfonts.com/css/carollo-playscript" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f8f5ef;
+            color: #222;
+            font-family: "Carollo Playscript", cursive;
+            min-height: 100vh;
+        }
+
+        /* ================= NAVIGATION ================= */
+
+        nav {
+            width: 100%;
+            padding: 28px 6vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 42px;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #222;
+            font-size: 18px;
+            letter-spacing: 0.5px;
+            position: relative;
+            transition: opacity 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.55;
+        }
+
+        /* ================= HERO ================= */
+
+        .hero {
+            min-height: calc(100vh - 90px);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            padding: 70px 8vw;
+            gap: 80px;
+        }
+
+        /* IMAGE */
+
+        .hero-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-image img {
+            width: min(100%, 540px);
+            height: 650px;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* TEXT */
+
+        .hero-text {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100%;
+        }
+
+        .hello {
+            font-size: clamp(90px, 12vw, 190px);
+            font-weight: normal;
+            line-height: 0.9;
+            letter-spacing: -5px;
+        }
+
+        /* ================= MOBILE ================= */
+
+        @media (max-width: 900px) {
+
+            nav {
+                padding: 22px 5vw;
+            }
+
+            .nav-links {
+                gap: 20px 28px;
+            }
+
+            .nav-links a {
+                font-size: 16px;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+                padding: 50px 7vw;
+                gap: 45px;
+                text-align: center;
+            }
+
+            .hero-image img {
+                width: 100%;
+                max-width: 500px;
+                height: 550px;
+            }
+
+            .hero-text {
+                justify-content: center;
+            }
+
+            .hello {
+                font-size: 100px;
+            }
+        }
+
+        @media (max-width: 500px) {
+
+            .nav-links {
+                gap: 14px 20px;
+            }
+
+            .nav-links a {
+                font-size: 14px;
+            }
+
+            .hero {
+                padding-top: 35px;
+            }
+
+            .hero-image img {
+                height: 430px;
+            }
+
+            .hello {
+                font-size: 80px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <nav>
+        <ul class="nav-links">
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#novels">Novels</a>
+            </li>
+
+            <li>
+                <a href="#comics">Comics</a>
+            </li>
+
+            <li>
+                <a href="#videostories">VideoStories</a>
+            </li>
+
+            <li>
+                <a href="#audiostories">AudioStories</a>
+            </li>
+
+            <li>
+                <a href="#member">Member</a>
+            </li>
+
+            <li>
+                <a href="#social-media">Social Media Handles</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
+        </ul>
+    </nav>
+
+
+    <!-- ================= LANDING PAGE ================= -->
+
+    <main class="hero">
+
+        <!-- Dr. Nisha's Photograph -->
+
+        <div class="hero-image">
+
+            <!--
+                IMPORTANT:
+                Rename your photograph to:
+
+                dr-nisha.jpg
+
+                Then place it in the SAME folder as this HTML file.
+            -->
+
+            <img
+                src="dr-nisha.jpg"
+                alt="Dr. Nisha"
+            >
+
+        </div>
+
+
+        <!-- Hello -->
+
+        <div class="hero-text">
+
+            <h1 class="hello">
+                Hello
+            </h1>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
+```
