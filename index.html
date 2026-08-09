@@ -49,7 +49,6 @@
             color: #222;
             font-size: 18px;
             letter-spacing: 0.5px;
-            position: relative;
             transition: opacity 0.3s ease;
         }
 
@@ -57,39 +56,49 @@
             opacity: 0.55;
         }
 
-        /* ================= HERO ================= */
+        /* ================= LANDING PAGE ================= */
 
         .hero {
             min-height: calc(100vh - 90px);
+
             display: grid;
+
+            /* Photo on left, Hello on right */
             grid-template-columns: 1fr 1fr;
+
             align-items: center;
+
             padding: 70px 8vw;
+
             gap: 80px;
         }
 
-        /* IMAGE */
+        /* ================= PHOTO ================= */
 
-        .hero-image {
+        .photo-area {
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        .hero-image img {
-            width: min(100%, 540px);
+        .photo-area img {
+            width: 100%;
+            max-width: 520px;
+
+            /* Dedicated space for the photograph */
             height: 650px;
+
             object-fit: cover;
+
             display: block;
         }
 
-        /* TEXT */
+        /* ================= HELLO ================= */
 
-        .hero-text {
+        .hello-area {
             display: flex;
             align-items: center;
             justify-content: flex-start;
-            height: 100%;
         }
 
         .hello {
@@ -122,13 +131,13 @@
                 text-align: center;
             }
 
-            .hero-image img {
+            .photo-area img {
                 width: 100%;
                 max-width: 500px;
                 height: 550px;
             }
 
-            .hero-text {
+            .hello-area {
                 justify-content: center;
             }
 
@@ -151,7 +160,7 @@
                 padding-top: 35px;
             }
 
-            .hero-image img {
+            .photo-area img {
                 height: 430px;
             }
 
@@ -197,7 +206,6 @@
                 <a href="#social-media">Social Media Handles</a>
             </li>
 
-            <!-- Contact opens contact.html -->
             <li>
                 <a href="contact.html">Contact</a>
             </li>
@@ -210,9 +218,17 @@
 
     <main class="hero">
 
-        <!-- Dr. Nisha's Photograph -->
+        <!-- ================= PHOTO ================= -->
 
-        <div class="hero-image">
+        <div class="photo-area">
+
+            <!--
+                Upload your photograph with this exact name:
+
+                dr-nisha.jpg
+
+                Keep it in the same folder as index.html.
+            -->
 
             <img
                 src="dr-nisha.jpg"
@@ -222,9 +238,9 @@
         </div>
 
 
-        <!-- Hello -->
+        <!-- ================= HELLO ================= -->
 
-        <div class="hero-text">
+        <div class="hello-area">
 
             <h1 class="hello">
                 Hello
